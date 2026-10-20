@@ -1360,12 +1360,19 @@ renderChoices();
 (()=>{
  const categories=[
   {name:'Diagnostics Performed',description:'Explain the tests completed and how results will be communicated.',examples:[
-   {title:"Diagnostics List (Separate Lines)",body:`Diagnostics Performed:
-Complete Blood Count (CBC): #INPUT#
+   {title:"Diagnostic (Complete List)",body:`Diagnostics Performed:
+Oscillometric Blood Pressure:
+Blood Work:
+Complete Blood Count: #INPUT#
 Serum Biochemistry: #INPUT#
+Vector-Borne Disease Panel:
+Urine Evaluation:
 Urinalysis: #INPUT#
-Diagnostic Imaging: #INPUT#
-Additional Testing: #INPUT#`},
+Urine Protein to Creatinine Ratio (UPCR): #INPUT#
+Diagnostic Imaging: 
+Thoracic Radiographs (X-Rays): finalized report pending
+Abdominal Ultrasound: finalized report pending
+Echocardiogram (Ultrasound of the Heart): finalized report pending
    {title:"Blood Work",body:"Blood work was performed today to evaluate [reason for testing]. The results showed [key findings]. [Additional testing or monitoring recommendations]."},
    {title:"Diagnostic Imaging",body:"[Radiographs/ultrasound/CT] were performed to evaluate [clinical concern]. The findings included [summary of findings]. [Any limitations or recommended follow-up]."},
    {title:"Pending Test Results",body:"The results of [test name] are still pending. The anticipated turnaround time is [timeframe]. The Internal Medicine Service will contact you once the results have been reviewed."}
