@@ -1372,17 +1372,29 @@ Urine Protein to Creatinine Ratio (UPCR): #INPUT#
 Diagnostic Imaging: 
 Thoracic Radiographs (X-Rays): finalized report pending
 Abdominal Ultrasound: finalized report pending
-Echocardiogram (Ultrasound of the Heart): finalized report pending
-   {title:"Blood Work",body:"Blood work was performed today to evaluate [reason for testing]. The results showed [key findings]. [Additional testing or monitoring recommendations]."},
-   {title:"Diagnostic Imaging",body:"[Radiographs/ultrasound/CT] were performed to evaluate [clinical concern]. The findings included [summary of findings]. [Any limitations or recommended follow-up]."},
-   {title:"Pending Test Results",body:"The results of [test name] are still pending. The anticipated turnaround time is [timeframe]. The Internal Medicine Service will contact you once the results have been reviewed."}
+Echocardiogram (Ultrasound of the Heart): finalized report pending`},
+   {title:"Blood Work",body:`Blood Work:
+Complete Blood Count: #INPUT#
+Serum Biochemistry: #INPUT#`},
+   {title:"Pending Diagnostics",body:`Pending Diagnostics:
+Vector-Borne Disease Panel
+Biopsy Results: #INPUT#`},
+   {title:"Pending Test NOTE",body:"If you have not received an update regarding #INPUT#'s pending diagnostic results within 2 weeks, please contact our department for follow-up."}
   ]},
   {name:'Procedures Performed',description:'Document procedures completed and home-care instructions.',examples:[
-   {title:"Procedures List (Separate Lines)",body:`Procedures Performed:
-Procedure 1: #INPUT#
-Procedure 2: #INPUT#
-Procedure 3: #INPUT#
-Additional Procedures: #INPUT#`},
+   {title:"Hospitalization List",body:`Therapies while Hospitalized:
+Intravenous Fluids
+Antibiotics: #INPUT#
+Antinausea or Antivomiting Therapies: #INPUT#
+Anxiety Medications: #INPUT#
+Blood Thinners: #INPUT#
+Diarrhea Supportive Therapies:
+Immunosuppressive Therapies: #INPUT#
+Insulin Therapy: #INPUT#
+Motility Agents: #INPUT#
+Pain Medications: #INPUT#
+Steroids: #INPUT#
+Other Therapies:`},
    {title:'Anesthesia',body:`General Anesthesia: #INPUT# underwent general anesthesia during today's visit to allow for diagnostic testing and procedures. Over the next 12–24 hours, #INPUT# should be encouraged to rest comfortably in a quiet environment. During this period, activities involving stairs, elevated surfaces, or access to large bodies of water should be avoided. As the anesthetic medications gradually wear off, you may notice temporary drowsiness, decreased coordination, or an unsteady gait. These effects should progressively improve as #INPUT# recovers from anesthesia.`},
    {title:'Anesthesia (Follow-Up)',body:`Anesthesia can temporarily slow the movement of food through the stomach and intestines, which may result in nausea, vomiting, regurgitation, or decreased appetite. Some patients may require additional supportive treatments to help manage these signs during recovery. Following anesthesia, please monitor #INPUT# for gastrointestinal signs (vomiting, regurgitation, nausea, decreased to no appetite, or diarrhea), persistent lethargy, unusual changes in behavior, or breathing abnormalities (coughing, increased breathing rate or effort, shallow breathing, or pale or blue-tinged gums). Breathing abnormalities are particularly important to monitor for, as aspiration pneumonia can develop if stomach contents accidentally enter the lungs during or following anesthesia.`},    
    {title:'Aspirates (Bleed Non-Progressive)',body:`Aspirates (Cellular Sampling): during today's visit, aspirates were collected from #INPUT#'s #INPUT#. A small amount of bleeding was observed on ultrasound following sample collection; however, this resolved without further intervention. Over the next 24 hours, please monitor #INPUT# for signs of internal bleeding, including abdominal swelling, lethargy, weakness, pale gums, or collapse. If any of these signs occur, immediate veterinary evaluation is recommended.`},
@@ -1395,6 +1407,9 @@ Additional Procedures: #INPUT#`},
    {title:'Post-Rhinoscopy',body:`Rhinoscopy: small biopsies were collected from the nasal cavity during #INPUT#'s rhinoscopy. Mild nasal irritation, including temporary sneezing, nasal discharge, or congestion, may occur following the procedure. In some patients, these signs may temporarily worsen following rhinoscopy due to irritation and inflammation associated with the procedure and biopsy collection. Over the next several days, please monitor for bloody nasal discharge, which may range from lightly blood-tinged mucus to bright red blood. Additional signs to monitor for include persistent sneezing, worsening nasal congestion, difficulty breathing, decreased appetite, lethargy, or weakness. If excessive or persistent bleeding is observed, breathing difficulties develop, or any other concerning clinical signs occur, please contact our hospital or seek veterinary evaluation promptly.`},
    {title:'Post-Upper Endoscopy',body:`Upper Endoscopy: small biopsies were collected from the stomach and small intestine during #INPUT#'s upper gastrointestinal endoscopy. Mild gastrointestinal upset, including nausea or decreased appetite, may occur following the procedure. Although minor bleeding can occur at the biopsy sites, significant bleeding is not expected. Over the next several days, please monitor for blood in the vomit or stool, which may appear bright red or dark and tar-like. Additional signs to monitor for include persistent vomiting, decreased appetite, abdominal discomfort, lethargy, or weakness. If bleeding is observed or any concerning clinical signs develop, please contact our hospital or seek veterinary evaluation promptly.`},
    {title:'Post-Upper & Lower',body:`Upper and Lower Endoscopy: small biopsies were collected from the stomach, small intestine, and large intestine during #INPUT#'s procedure.. Mild gastrointestinal upset, including nausea, decreased appetite, or temporary diarrhea, may occur following these procedures. Although minor bleeding can occur at the biopsy sites, significant bleeding is not expected. Over the next several days, please monitor for blood in the vomit or stool, which may appear bright red or dark and tar-like. Additional signs to monitor for include persistent vomiting or diarrhea, straining to defecate, decreased appetite, abdominal discomfort, lethargy, or weakness. If excessive or persistent bleeding is observed, or any concerning clinical signs develop, please contact our hospital or seek veterinary evaluation promptly.`},
+   {title:"Sedatives List",body:`Sedatives Administered:
+(1) #INPUT# (2) #INPUT# 
+Sedation Achieved:`}, 
    {title:'Sedation',body:`Sedation: #INPUT# received sedation during today's visit to allow for diagnostic testing and procedures. Over the next 12–24 hours, #INPUT# should be encouraged to rest comfortably in a quiet environment. During this period, activities involving stairs, elevated surfaces, or access to large bodies of water should be avoided. As the sedative medications gradually wear off, you may notice temporary drowsiness, decreased coordination, or an unsteady gait. These effects should progressively improve as #INPUT# further recovers. This evening, offer approximately half of #INPUT#'s usual meal portion. If this is well tolerated without vomiting or other gastrointestinal upset, normal feeding amounts may be resumed with the next scheduled meal.`}
   ]},
   {name:'Monitoring',description:'Provide clear signs to watch for at home.',examples:[
